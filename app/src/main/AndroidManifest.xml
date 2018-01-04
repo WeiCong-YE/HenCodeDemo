@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <!--自定义六角形-->
+        <activity android:name=".Activity.HenCode1"/>
     </application>
 
 </manifest>

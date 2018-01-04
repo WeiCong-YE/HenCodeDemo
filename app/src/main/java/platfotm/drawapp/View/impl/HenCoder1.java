@@ -108,10 +108,16 @@ public class HenCoder1 extends BaseView {
         mPaintForDrawText.setAntiAlias(true);
         mPaintForDrawText.setColor(mTextColor);
         mAngle = 360 / mEdgeCount;
-        for (int i = 0; i < mEdgeCount; i++) {
-            mPointRateValue.add((float) (Math.random() * 1));
-            mPointName.add("角度" + i);
-        }
+    }
+
+    public void setPointRateValue(List<Float> pointRateValue) {
+        mPointRateValue = pointRateValue;
+        invalidate();
+    }
+
+    public void setPointName(List<String> pointName) {
+        mPointName = pointName;
+        invalidate();
     }
 
     public HenCoder1(Context context) {
